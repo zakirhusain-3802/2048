@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="0dp"
+        android:layout_marginTop="500dp"
+        app:cardBackgroundColor="#00FFFFFF"
+        >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:text="Do you want to play again ?"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/okay_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:layout_below="@id/text1"
+            android:layout_alignEnd="@id/text1"
+            android:layout_marginRight="10dp"
+            android:textColor="#0024EF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cancel_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/text1"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text1"
+        android:text="No"
+        android:textStyle="bold"
+        android:textColor="#A70000"
+        android:textSize="20sp" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

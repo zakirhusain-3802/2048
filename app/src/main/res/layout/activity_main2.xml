@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#FFFCEF">
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:id="@+id/webview">
+
+    </WebView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+android:text="2048"
+    android:textSize="70dp"
+    android:textStyle="bold"
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="20dp"
+    android:fontFamily="sans-serif"
+    android:textColor="#2F4858"/>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/scorediv"
+        >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#F3EDE3"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal"
+android:textStyle="bold"
+        android:textSize="13dp"
+        android:text="SCORE" />
+
+
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+ android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="0" />
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="20dp"
+        android:paddingHorizontal="8dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/scorediv"
+        >
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#F8F4EA"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="13dp"
+            android:text="BEST" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:text="10000" />
+    </FrameLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/restart"
+        android:background="@drawable/scorediv"
+        android:padding="5dp"
+        android:src="@drawable/restart_btn"
+        android:layout_marginTop="170dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_marginTop="675dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6065082492952635/1835377845">
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+</FrameLayout>
+<!-- ca-app-pub-6065082492952635/1835377845   og id-->
+<!--  ca-app-pub-3940256099942544/6300978111    test id-->

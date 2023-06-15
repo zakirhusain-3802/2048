@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFCEF">
+<!--    <ImageView-->
+<!--        android:id="@+id/startgame"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/play"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="100dp"/>-->
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/startgame"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:textColor="#8A9A90"
+        android:paddingVertical="0dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="240dp"
+        android:textStyle="bold"
+        android:textSize="13dp"
+        android:background="@drawable/play1"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:src="@drawable/home_screen1"/>
+<!--    <TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="2048"-->
+<!--    android:textSize="100sp"-->
+<!--    android:textColor="#2F4858"-->
+<!--    android:layout_gravity="center_horizontal"-->
+<!--    android:layout_marginTop="80dp"-->
+<!--    android:textStyle="bold"/>-->
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/title" />
+</FrameLayout>
